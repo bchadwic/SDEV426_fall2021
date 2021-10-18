@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>All Ranked Programming Frameworks</title>
+</head>
+<body>
+<h1>All Ranked Programming Frameworks</h1>
+<ul>
+    <li th:each="frame : ${frames}"
+        th:text="'#' + ${frame.ranking} + ': ' + ${frame.name}"></li>
+</ul>
+</body>
+</html>
